@@ -6,7 +6,7 @@ Displays battery of a connected dualsense controller, and turns off the controll
 
 ## Installation
 
-Clone the repo under "~/.config/awesome/" then add it to your `theme.lua`
+Clone the repo under "~/.config/awesome/widgets/" then add it to your `theme.lua`
 
 ```lua
 local dualsensebat_widget = require("dualsense.dualsense")
