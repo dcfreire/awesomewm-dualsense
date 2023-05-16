@@ -31,7 +31,8 @@ local function worker(args)
     }
 
     function controller.update(_, text, _, _)
-        local bat = tonumber(text)
+        local bat = tonumber(string.match(text, "%d*"))
+
         if bat == nil then
             controller:get_children_by_id('battery')[1]:set_markup('')
             controller:set_visible(false)
